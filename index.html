@@ -16,16 +16,20 @@
         content="создание сайтов, разработка сайтов, изготовление сайтов, создание сайта, разработка сайтов, создать сайт, разаботать сайт, создать визитку, разработка визитки, сделать сайт-визитку" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+        * {
+            font-family: 'Nunito', sans-serif;
+            font-weight: normal;
+        }
         body {
             background-color: #dddddd;
             margin: 1em auto;
             max-width: 45em;
             padding: 0.62em;
+            
             font: 1.2em/1.62 sans-serif;
             text-align: center;
-            font-family: 'Open Sans', sans-serif;
+            
         }
 
         .box {
@@ -101,11 +105,25 @@
         a[href*="github"] {
             background-color: #004e75;
         }
+        a[href*="portfolio"]::before {
+            content: url("book-solid.svg");
+        }
+
+        a[href*="portfolio"] {
+            background-color: rgb(228, 94, 46);
+        }
 
         @media screen and (max-width:479px) {
             .grid-items {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                
+            }
+            .grid-item-1 {
+                justify-self: center;
+            }
+            .grid-item-2 {
+                justify-self: center;
             }
         }
     </style>
@@ -120,6 +138,7 @@
     <h4>Верстка веб-сайтов и помощь в разработке</h4>
         <p>Приглашаю к дружелюбному и продуктивному сотрудничеству</p>
     <div class="box">
+        <a target="_blank" class="element" href="#/portfolio.html">Портфолио</a>
         <a target="_blank" class="element" href="https://github.com/Nelson9309">GitHub</a>
         <a target="_blank" class="element" href="https://wa.me/79992493650">Написать в WhatsApp</a>
         <a target="_blank" class="element" href="https://t.me/grtstmx">Написать в Telegram</a>
